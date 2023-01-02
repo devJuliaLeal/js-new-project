@@ -4,20 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <style>
       body {
-        background-color: rgb(6, 32, 24);
-        color: antiquewhite;
         font: normal 20pt sans serif;
       }
     </style>
   </head>
   <body>
-    <h1>Hi!</h1>
-    <p>I`m Julia</p>
     <script>
-      var name = window.prompt("what`s your name?");
-      window.alert("Nice to meet you, " + name + "!"); //+ serve para concatenação
+      var name = window.prompt("What is your name?");
+      document.writeln(`Hi, ${name}, Your name have ${name.length} letters.`);
+      document.writeln(`Your name in Uppercase is ${name.toUpperCase()}`);
+      document.writeln(`Your name in Lowercase is ${name.toLowerCase()}`);
     </script>
   </body>
 </html>
